@@ -190,4 +190,15 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/jf-common/proprietary/lib/libhdcp2.so:system/lib/libhdcp2.so \
         vendor/samsung/jf-common/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
         vendor/samsung/jf-common/proprietary/lib/libWVStreamControlAPI_L1.so:system/lib/libWVStreamControlAPI_L1.so \
-        vendor/samsung/jf-common/proprietary/lib/libwvm.so:system/lib/libwvm.so
+        vendor/samsung/jf-common/proprietary/lib/libwvm.so:system/lib/libwvm.so \
+        vendor/samsung/jflte/proprietary/blobs/vzw/etc/firmware/q6.b00:system/blobs/vzw/etc/firmware/q6.b00 \
+        vendor/samsung/jflte/proprietary/blobs/vzw/etc/firmware/q6.b01:system/blobs/vzw/etc/firmware/q6.b01 \
+        vendor/samsung/jflte/proprietary/blobs/vzw/etc/firmware/q6.b03:system/blobs/vzw/etc/firmware/q6.b03 \
+        vendor/samsung/jflte/proprietary/blobs/vzw/etc/firmware/q6.b04:system/blobs/vzw/etc/firmware/q6.b04 \
+        vendor/samsung/jflte/proprietary/blobs/vzw/etc/firmware/q6.b05:system/blobs/vzw/etc/firmware/q6.b05 \
+        vendor/samsung/jflte/proprietary/blobs/vzw/etc/firmware/q6.b06:system/blobs/vzw/etc/firmware/q6.b06 \
+        vendor/samsung/jflte/proprietary/blobs/vzw/etc/firmware/q6.mdt:system/blobs/vzw/etc/firmware/q6.mdt \
+        vendor/samsung/jflte/proprietary/blobs/cdma/lib/libril-qc-qmi-1.so:system/blobs/cdma/lib/libril-qc-qmi-1.so \
+        vendor/samsung/jflte/proprietary/blobs/cdma/lib/libril.so:system/blobs/cdma/lib/libril.so \
+        vendor/samsung/jflte/proprietary/blobs/gsm/lib/libril-qc-qmi-1.so:system/blobs/gsm/lib/libril-qc-qmi-1.so \
+        vendor/samsung/jflte/proprietary/blobs/gsm/lib/libril.so:system/blobs/gsm/lib/libril.so
