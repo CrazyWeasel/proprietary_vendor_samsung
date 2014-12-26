@@ -62,3 +62,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/usr/keylayout/sec_e-pen.kl:system/usr/keylayout/sec_e-pen.kl \
     $(LOCAL_PATH)/proprietary/system/usr/keylayout/sec_touchkey.kl:system/usr/keylayout/sec_touchkey.kl
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/system/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
+    $(LOCAL_PATH)/proprietary/system/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
+    $(LOCAL_PATH)/proprietary/system/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so
