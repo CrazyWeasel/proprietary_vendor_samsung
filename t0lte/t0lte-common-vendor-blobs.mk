@@ -65,3 +65,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
     $(LOCAL_PATH)/proprietary/system/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
     $(LOCAL_PATH)/proprietary/system/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/system/vendor/firmware/bluetooth/bcm4334.hcd:system/vendor/firmware/bluetooth/bcm4334.hcd \
+    $(LOCAL_PATH)/proprietary/system/vendor/firmware/bluetooth/bcm4334_murata.hcd:system/vendor/firmware/bluetooth/bcm4334_murata.hcd \
+    $(LOCAL_PATH)/proprietary/system/vendor/firmware/bluetooth/bcm4334_semcosh.hcd:system/vendor/firmware/bluetooth/bcm4334_semcosh.hcd
