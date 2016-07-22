@@ -16,4 +16,8 @@
 
 # Pick up overlay for features that depend on non-open-source files
 
+# Camera
+PRODUCT_PACKAGES += \
+    libseccameracore.so
+
 $(call inherit-product, vendor/samsung/zero-common/zero-common-vendor-blobs.mk)
