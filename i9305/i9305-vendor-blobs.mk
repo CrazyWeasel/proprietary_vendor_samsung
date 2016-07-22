@@ -16,6 +16,7 @@ LOCAL_PATH := vendor/samsung/i9305
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/bin/at_distributor:system/bin/at_distributor \
+    $(LOCAL_PATH)/proprietary/system/bin/diag_uart_log:system/bin/diag_uart_log \
     $(LOCAL_PATH)/proprietary/system/bin/efsks:system/bin/efsks \
     $(LOCAL_PATH)/proprietary/system/bin/ks:system/bin/ks \
     $(LOCAL_PATH)/proprietary/system/bin/qcks:system/bin/qcks \
@@ -31,34 +32,43 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libakm.so:system/lib/libakm.so \
     $(LOCAL_PATH)/proprietary/system/lib/libatparser.so:system/lib/libatparser.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libcordon.so:system/lib/libcordon.so \
     $(LOCAL_PATH)/proprietary/system/lib/libcsd-client.so:system/lib/libcsd-client.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libdiag.so:system/lib/libdiag.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libdss.so:system/lib/libdss.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libdsutils.so:system/lib/libdsutils.so \
     $(LOCAL_PATH)/proprietary/system/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libidl.so:system/lib/libidl.so \
     $(LOCAL_PATH)/proprietary/system/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libnetmgr.so:system/lib/libnetmgr.so \
     $(LOCAL_PATH)/proprietary/system/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libqdi.so:system/lib/libqdi.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libqdp.so:system/lib/libqdp.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libqmi.so:system/lib/libqmi.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libqmi_cci.so:system/lib/libqmi_cci.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libqmi_client_qmux.so:system/lib/libqmi_client_qmux.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libqmi_common_so.so:system/lib/libqmi_common_so.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libqmi_csi.so:system/lib/libqmi_csi.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libqmi_encdec.so:system/lib/libqmi_encdec.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libqmiservices.so:system/lib/libqmiservices.so \
     $(LOCAL_PATH)/proprietary/system/lib/libril.so:system/lib/libril.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libsec-ril.so:system/lib/libsec-ril.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsecril-client.so:system/lib/libsecril-client.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libsec-ril.so:system/lib/libsec-ril.so
+    $(LOCAL_PATH)/proprietary/system/lib/libxml.so:system/lib/libxml.so
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/system/lib/hw/sensors.smdk4x12.so:system/lib/hw/sensors.smdk4x12.so
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/usr/keylayout/sec_touchkey.kl:system/usr/keylayout/sec_touchkey.kl
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/system/lib/hw/sensors.smdk4x12.so:system/lib/hw/sensors.smdk4x12.so
+    $(LOCAL_PATH)/proprietary/system/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
+    $(LOCAL_PATH)/proprietary/system/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
+    $(LOCAL_PATH)/proprietary/system/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
+    $(LOCAL_PATH)/proprietary/system/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
+    $(LOCAL_PATH)/proprietary/system/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
+    $(LOCAL_PATH)/proprietary/system/vendor/lib/libidl.so:system//vendor/lib/libidl.so \
+    $(LOCAL_PATH)/proprietary/system/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
+    $(LOCAL_PATH)/proprietary/system/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
+    $(LOCAL_PATH)/proprietary/system/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
+    $(LOCAL_PATH)/proprietary/system/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
+    $(LOCAL_PATH)/proprietary/system/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
+    $(LOCAL_PATH)/proprietary/system/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
+    $(LOCAL_PATH)/proprietary/system/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
+    $(LOCAL_PATH)/proprietary/system/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
+    $(LOCAL_PATH)/proprietary/system/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
+    $(LOCAL_PATH)/proprietary/system/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
+    $(LOCAL_PATH)/proprietary/system/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/system/vendor/firmware/bluetooth/bcm4334.hcd:system/vendor/firmware/bluetooth/bcm4334.hcd \
+    $(LOCAL_PATH)/proprietary/system/vendor/firmware/bluetooth/bcm4334_murata.hcd:system/vendor/firmware/bluetooth/bcm4334_murata.hcd \
+    $(LOCAL_PATH)/proprietary/system/vendor/firmware/bluetooth/bcm4334_semcosh.hcd:system/vendor/firmware/bluetooth/bcm4334_semcosh.hcd
