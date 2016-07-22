@@ -132,10 +132,64 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/zero-common/proprietary/vendor/firmware/seiren_fw_sram.bin:system/vendor/firmware/seiren_fw_sram.bin \
 	vendor/samsung/zero-common/proprietary/vendor/firmware/bcm4358A3_V0064.0105.hcd:system/vendor/firmware/bcm4358A3_V0064.0105.hcd \
 	vendor/samsung/zero-common/proprietary/vendor/firmware/bcm4358A3_V0064.0105_wisol.hcd:system/vendor/firmware/bcm4358A3_V0064.0105_wisol.hcd \
+	vendor/samsung/zero-common/proprietary/lib/hw/camera.universal7420.so:system/lib/hw/camera.universal7420.so \
+	vendor/samsung/zero-common/proprietary/lib64/hw/camera.universal7420.so:system/lib64/hw/camera.universal7420.so \
+	vendor/samsung/zero-common/proprietary/lib/hw/camera.exynos5.so:system/lib/hw/camera.exynos5.so \
+	vendor/samsung/zero-common/proprietary/lib64/hw/camera.exynos5.so:system/lib64/hw/camera.exynos5.so \
 	vendor/samsung/zero-common/proprietary/lib/libexynoscamera3.so:system/lib/libexynoscamera3.so \
 	vendor/samsung/zero-common/proprietary/lib64/libexynoscamera3.so:system/lib64/libexynoscamera3.so \
 	vendor/samsung/zero-common/proprietary/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
 	vendor/samsung/zero-common/proprietary/lib64/libexynoscamera.so:system/lib64/libexynoscamera.so \
+	vendor/samsung/zero-common/proprietary/lib/libblurdetection_interface.so:system/lib/libblurdetection_interface.so \
+	vendor/samsung/zero-common/proprietary/lib64/libblurdetection_interface.so:system/lib64/libblurdetection_interface.so \
+	vendor/samsung/zero-common/proprietary/lib/libjpegQtable_interface.so:system/lib/libjpegQtable_interface.so \
+	vendor/samsung/zero-common/proprietary/lib64/libjpegQtable_interface.so:system/lib64/libjpegQtable_interface.so \
+	vendor/samsung/zero-common/proprietary/lib/liblls_interface.so:system/lib/liblls_interface.so \
+	vendor/samsung/zero-common/proprietary/lib64/liblls_interface.so:system/lib64/liblls_interface.so \
+	vendor/samsung/zero-common/proprietary/lib/libllv_interface.so:system/lib/libllv_interface.so \
+	vendor/samsung/zero-common/proprietary/lib64/libllv_interface.so:system/lib64/libllv_interface.so \
+	vendor/samsung/zero-common/proprietary/lib/libsmartfocus_interface.so:system/lib/libsmartfocus_interface.so \
+	vendor/samsung/zero-common/proprietary/lib64/libsmartfocus_interface.so:system/lib64/libsmartfocus_interface.so \
+	vendor/samsung/zero-common/proprietary/lib/libOpenCv.so:system/lib/libOpenCv.so \
+	vendor/samsung/zero-common/proprietary/lib64/libOpenCv.so:system/lib64/libOpenCv.so \
+	vendor/samsung/zero-common/proprietary/lib/libGpuKidsMode.so:system/lib/libGpuKidsMode.so \
+	vendor/samsung/zero-common/proprietary/lib/libInteractiveShotEngine.so:system/lib/libInteractiveShotEngine.so \
+	vendor/samsung/zero-common/proprietary/lib/libMP4Writer_native.so:system/lib/libMP4Writer_native.so \
+	vendor/samsung/zero-common/proprietary/lib/libSEF.so:system/lib/libSEF.so \
+	vendor/samsung/zero-common/proprietary/lib/libSRZoom_v2.so:system/lib/libSRZoom_v2.so \
+	vendor/samsung/zero-common/proprietary/lib/libSisoCameraDistortionEffects.so:system/lib/libSisoCameraDistortionEffects.so \
+	vendor/samsung/zero-common/proprietary/lib/libarccamera.so:system/lib/libarccamera.so \
+	vendor/samsung/zero-common/proprietary/lib/libarcsoft_panorama_burstcapture.so:system/lib/libarcsoft_panorama_burstcapture.so \
+	vendor/samsung/zero-common/proprietary/lib/libarcsoft_selfie_camera_lite.so:system/lib/libarcsoft_selfie_camera_lite.so \
+	vendor/samsung/zero-common/proprietary/lib/libarcsoft_smartburst.so:system/lib/libarcsoft_smartburst.so \
+	vendor/samsung/zero-common/proprietary/lib/libarcsoft_smartburst_sefmanager_jni.so:system/lib/libarcsoft_smartburst_sefmanager_jni.so \
+	vendor/samsung/zero-common/proprietary/lib/libarcsoft_smartburst_utils.so:system/lib/libarcsoft_smartburst_utils.so \
+	vendor/samsung/zero-common/proprietary/lib/libarcsoft_wideselfie.so:system/lib/libarcsoft_wideselfie.so \
+	vendor/samsung/zero-common/proprietary/lib/libcameraservice_cameramodule.so:system/lib/libcameraservice_cameramodule.so \
+	vendor/samsung/zero-common/proprietary/lib/libdmcFaceEngine.so:system/lib/libdmcFaceEngine.so \
+	vendor/samsung/zero-common/proprietary/lib/libedmnativehelper.so:system/lib/libedmnativehelper.so \
+	vendor/samsung/zero-common/proprietary/lib/libexifa.so:system/lib/libexifa.so \
+	vendor/samsung/zero-common/proprietary/lib/libfbcap.so:system/lib/libfbcap.so \
+	vendor/samsung/zero-common/proprietary/lib/libjpega.so:system/lib/libjpega.so \
+	vendor/samsung/zero-common/proprietary/lib/libpalmMobileDetectorFull.so:system/lib/libpalmMobileDetectorFull.so \
+	vendor/samsung/zero-common/proprietary/lib/libquramresize.so:system/lib/libquramresize.so \
+	vendor/samsung/zero-common/proprietary/lib/libsccore.so:system/lib/libsccore.so \
+	vendor/samsung/zero-common/proprietary/lib/libsecface.so:system/lib/libsecface.so \
+	vendor/samsung/zero-common/proprietary/lib/libsecimaging.so:system/lib/libsecimaging.so \
+	vendor/samsung/zero-common/proprietary/lib/libsecjpeginterface.so:system/lib/libsecjpeginterface.so \
+	vendor/samsung/zero-common/proprietary/lib/libsrib_outfocus.so:system/lib/libsrib_outfocus.so \
+	vendor/samsung/zero-common/proprietary/lib/libsupershot.so:system/lib/libsupershot.so \
+	vendor/samsung/zero-common/proprietary/lib/libviewSmoothingNative.so:system/lib/libviewSmoothingNative.so \
+	vendor/samsung/zero-common/proprietary/lib64/libSEF.so:system/lib64/libSEF.so \
+	vendor/samsung/zero-common/proprietary/lib64/libarccamera.so:system/lib64/libarccamera.so \
+	vendor/samsung/zero-common/proprietary/lib64/libarcsoft_selfie_camera_lite.so:system/lib64/libarcsoft_selfie_camera_lite.so \
+	vendor/samsung/zero-common/proprietary/lib64/libdmcFaceEngine.so:system/lib64/libdmcFaceEngine.so \
+	vendor/samsung/zero-common/proprietary/lib64/libedmnativehelper.so:system/lib64/libedmnativehelper.so \
+	vendor/samsung/zero-common/proprietary/lib64/libexifa.so:system/lib64/libexifa.so \
+	vendor/samsung/zero-common/proprietary/lib64/libjpega.so:system/lib64/libjpega.so \
+	vendor/samsung/zero-common/proprietary/lib64/libsccore.so:system/lib64/libsccore.so \
+	vendor/samsung/zero-common/proprietary/lib64/libsecimaging.so:system/lib64/libsecimaging.so \
+	vendor/samsung/zero-common/proprietary/lib64/libsecjpeginterface.so:system/lib64/libsecjpeginterface.so \
 	vendor/samsung/zero-common/proprietary/lib/libsensorlistener.so:system/lib/libsensorlistener.so \
 	vendor/samsung/zero-common/proprietary/lib64/libsensorlistener.so:system/lib64/libsensorlistener.so \
 	vendor/samsung/zero-common/proprietary/lib/libuniplugin.so:system/lib/libuniplugin.so \

@@ -16,3 +16,22 @@
 
 LOCAL_PATH := $(call my-dir)
 
+include $(CLEAR_VARS)
+
+LOCAL_MODULE := libseccameracore
+
+LOCAL_MODULE_OWNER := samsung
+
+LOCAL_SRC_FILES := proprietary/lib/libseccameracore.so
+
+LOCAL_MODULE_TAGS := optional
+
+LOCAL_MODULE_SUFFIX := .so
+
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+
+LOCAL_MODULE_PATH := $(TARGET_OUT)/lib
+
+LOCAL_32_BIT_ONLY := true
+
+include $(BUILD_PREBUILT)
